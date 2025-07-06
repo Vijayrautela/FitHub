@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/—Pngtree—dumbbell and hand fitness symbol_6845036.png">
+    <title>FitHub</title>
+</head>
+<body>
+     <header>
+        <div class="logo">
+            <img src="images/—Pngtree—dumbbell and hand fitness symbol_6845036.png">
+            <h2>FitHub</h2>
+        </div>
+        <div class="menu">
+            <div class="home">
+                <a href="#">Home</a>
+            </div>
+            <div class="About">
+                <a href="#">About Us</a>
+            </div>
+            <div class="Program">
+                <a href="#">Program</a>
+            </div>
+            <div class="Membership">
+                <a href="#">Membership</a>
+            </div>
+            <div class="sign">
+                <button onclick="openModal()">Sign up</button>
+                </div>
+        </div>
+     </header>
+
+     <!-- login section -->
+
+      <div class="modal" id="authModal">
+    <div class="modal-content">
+      <div class="tab-header">
+        <button class="tab-btn active" onclick="showTab('login')">Login</button>
+        <button class="tab-btn" onclick="showTab('register')">Register</button>
+      </div>
+
+      <div class="form-container" id="loginTab">
+        <input type="text" id="loginUser" placeholder="Email or Username" />
+        <input type="password" id="loginPass" placeholder="Password" />
+        <button class="btn" onclick="loginUser()">Login</button>
+      </div>
+
+      <div class="form-container hidden" id="registerTab">
+        <input type="text" id="regUsername" placeholder="Username" />
+        <input type="email" id="regEmail" placeholder="Email" />
+        <input type="password" id="regPassword" placeholder="Password" />
+        <button class="btn" onclick="saveUser()">Register</button>
+      </div>
+    </div>
+    <span class="close" onclick="closeModal()">&times;</span>
+  </div>
+
+
+
+<!-- first section -->
+     <section class="main">
+<div class="sec">
+        <div class="sec-one">
+            <div class="left-sec-one">
+                 <h1>GET HEALTHY BODY WITH THE PERFECT EXERCISES </h1>
+            <P>We are always there to help you to make healthy body and mind through the power of fitness</P>
+            <div class="start"><button>Get Started</button>
+            <div class="play">
+                <a href="#">
+                <img src="images/—Pngtree—vector play button icon_4239632.png">
+                <p>Watch Videos</p></a>
+            </div>
+
+            </div>
+
+            <div class="last-one">
+                <div class="l-one">
+                    <h1>105+</h1>
+                    <p>Expert tranning</p>
+                </div><hr>
+                <div class="l-one">
+                    <h1>970+</h1>
+                    <p>Member joined</p>
+                </div><hr>
+                <div class="l-one">
+                    <h1>135+</h1>
+                    <p>Fitness program</p>
+                </div>
+            </div>
+            </div>
+           
+        </div>
+ <div></div>
+           
+            </div>
+     </section>
+
+
+
+
+<!-- Section second -->
+
+
+
+<section class="Second-sec-page">
+    <div class="sec-two">
+        <div class="sec-upper">
+            <div class="sec-upper-l">
+                <h1>970k+ More</h1>
+                <p>Trusted Companies Partner</p>
+            </div>
+             <div class="sec-upper-r">
+                <div class="two-brand">
+                    <img src="images/ask.png">
+                    <p>Videoask</p>
+                </div>
+                <div class="fabspot">
+                    <img src="images/febspot_thumb.png">
+                </div>
+                <div class="two-brand">
+                    <img src="images/mapbox-seeklogo.png">
+                    <p>Mapbox</p>
+                </div>
+             </div>
+        </div>
+
+
+        <div class="sec-bottom">
+            <div class="sec-bottom-l">
+                <img src="images/traniing.jpg">
+            </div>
+             <div class="sec-bottom-r">
+                <h1>Get Ready To Reach Your Fitness Goals</h1>
+                <p>We are a gym that is committed to helping people reach their fitness goals. We offer a variety of fitness programs and services to fit your needs, whether you are an exprienced athletes. </p>
+                <p>We belive that everyone should have to access to the benfits of exercise. Make it heppen.</p>
+                <button>Free Trial Today</button>
+             </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- third section -->
+
+
+        <section class="third">
+
+            <div class="third-sec">
+                <div class="t-up">
+                    <div class="t-l">
+                        <h1>The Best Programs We Offer For You</h1>
+                    </div>
+                    <div class="t-r">
+                        <p>We offer a wide range of comprehensive fitness programs designed to create to individuals of all fitness levels. Our aim is help you achive specific goals & maximize results.</p>
+                    </div>
+                </div>
+
+
+                <div class="t-bottom">
+                    <div class="box">
+                        <div class="box-one">
+                            <div class="t-up-one">
+                            <img src="images/icons8-dumbbell-48.png">
+                            <h1>Strength Tranning</h1></div>
+                            <p>Our trainer will design these progressive workout plans that prepare you for gains strength.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+
+                         <div class="box-one"> <div class="t-up-one">
+                            <img src="images/icons8-yoga-50.png">
+                            <h1>Basic Yoga</h1></div>
+                            <p>This program combines yoga with cardio & strangth traning to help ease strength & fetness.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+
+                         <div class="box-one"> <div class="t-up-one">
+                            <img src="images/icons8-biceps-66.png">
+                            <h1>Body Building</h1></div>
+                            <p>Our basic coaching increses strength, builds lean muscle & boosts your strength & cardio.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+
+                         <div class="box-one"> <div class="t-up-one">
+                            <img src="images/icons8-running-50.png">
+                            <h1>Weight Loss</h1></div>
+                            <p>Our weight-loss programs are designed to help you make sustainable lifestyle changes.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+        <!-- fourth section -->
+
+
+
+        <section class="fourth">
+
+
+            <div class="f-sec">
+
+                <div class="f-l">
+                    <div class="f-main"> <h1>Why Should People Choose FitHub Services</h1></div>
+                   
+                    <div class="f-l-u"><div class="f-l-pera">  <img src="images/—Pngtree—dumbbell and hand fitness symbol_6845036.png">
+                        <h1>Personal Tranning  </h1></div>
+                      <p>Our personal trainers can help you create a personalized fitness plan and track your progress.
+</p>
+                    </div>
+
+                    <div class="f-l-u"><div class="f-l-pera">  <img src="images/—Pngtree—dumbbell and hand fitness symbol_6845036.png">
+                        <h1>Expert Trainer
+</h1></div>
+                      <p>Our gym is proud to offer a team of highly skilled and certified trainers to help achieve your health & fitness goals.
+
+</p>
+                    </div>
+
+                    <div class="f-l-u"><div class="f-l-pera">  <img src="images/—Pngtree—dumbbell and hand fitness symbol_6845036.png">
+                        <h1>Flexible Time
+</h1></div>
+                      <p>There are many fitness classes that are offered during off-peak hours, such as early morning or late evening.
+
+</p>
+                    </div>
+
+                    <button>Join Today</button>
+                </div>
+                <div class="f-r">
+                    <img src="images/happy-healthy-woman-with-yoga-mat.png">
+                    <div class="circul-f"></div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+<!-- fifth section -->
+
+<section class="fifth">
+
+<div class="fifth-sec">
+    
+    <div class="fifth-up">
+        <h1>Choose The Best Plan</h1>
+        <p>Choose a plan that's right for your growing team. Simple pricing & no hidden charges</p>
+    </div>
+    <div class="sec-pack">
+        <div class="sub-btn onn"><button type="button" onclick="pack('month')">Monthly</button></div>
+        <div class="sub-btn"><button type="button" onclick="pack('year')">Annual</button></div>
+    </div>
+ 
+
+<div class="Subscription" id="monthlypack">
+   
+    <div class="pack">
+        <div class="pack-name">DISCOVER</div>
+        <div class="prize"><span class="pri">$99</span>/Per Month</div>
+        <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>5 classes per month</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>4 group classes monthly</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>Online class access</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>E-book fitness guide</p>
+        </div>
+
+        <div class="Choose-plan"><button>Choose plan</button></div>
+    </div>
+
+
+<div class="pack">
+        <div class="pack-name">ENTERPRISE</div>
+        <div class="prize"><span class="pri">$299</span>/Per Month</div>
+        <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>10 classes per month</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>6 group classes monthly</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>Online class access</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>E-book fitness guide</p>
+        </div>
+
+                 <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>7 Days fitness tranning</p>
+        </div>
+
+        <div class="Choose-plan"><button>Choose plan</button></div>
+    </div>
+
+
+
+
+
+    <div class="pack">
+        <div class="pack-name">PROFESSIONAL</div>
+        <div class="prize"><span class="pri">$199</span>/Per Month</div>
+        <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>7 classes per month</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>6 group classes monthly</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>Online class access</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>E-book fitness guide</p>
+        </div>
+
+        <div class="Choose-plan"><button>Choose plan</button></div>
+    </div>
+
+
+</div>
+
+<!-- yearly pack -->
+
+<div class="Subscription off" id="yearlypack">
+   
+    <div class="pack">
+        <div class="pack-name">DISCOVER</div>
+        <div class="prize"><span class="pri">$1099</span>/Per Year</div>
+        <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>5 classes per month</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>4 group classes monthly</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>Online class access</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>E-book fitness guide</p>
+        </div>
+
+        <div class="Choose-plan"><button>Choose plan</button></div>
+    </div>
+
+
+<div class="pack">
+        <div class="pack-name">ENTERPRISE</div>
+        <div class="prize"><span class="pri">$3499</span>/Per Year</div>
+        <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>10 classes per month</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>6 group classes monthly</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>Online class access</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>E-book fitness guide</p>
+        </div>
+
+                 <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>7 Days fitness tranning</p>
+        </div>
+
+        <div class="Choose-plan"><button>Choose plan</button></div>
+    </div>
+
+
+
+
+
+    <div class="pack">
+        <div class="pack-name">PROFESSIONAL</div>
+        <div class="prize"><span class="pri">$2299</span>/Per Year</div>
+        <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>7 classes per month</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>6 group classes monthly</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>Online class access</p>
+        </div>
+
+         <div class="pack-list">
+            <div class="list-img"><img src="#"></div>
+            <p>E-book fitness guide</p>
+        </div>
+
+        <div class="Choose-plan"><button>Choose plan</button></div>
+    </div>
+
+
+</div>
+
+</div>
+
+
+</section>
+
+
+<!-- review section -->
+<section class="review">
+
+
+    <div class="review-sec">
+
+        <div class="riv-l">
+            <div class="riv-main"><h1>What Our Happy Clients Say About Us</h1></div>
+            <div class="riv-p">
+                <p>"I' ve been member of fitness center for about 6 months now and it feels really greate! The trainers are so motivate and they really help me reach fitness goals."</p>
+            </div>
+            <div class="riv-star">
+                <div class="riv-pic">
+                    <div class="riv-pic-o"> <img src="images/traniing.jpg"></div>
+
+                    <div class="riv-pic-t"> <img src="images/1.png"></div>
+
+                     <div class="riv-pic-q"> <img src="images/2.png"></div>
+
+                       <div class="riv-pic-w"> <img src="images/3.png"></div>
+
+                </div>
+                <div class="riv-rate">
+                    <img src="images/rating+(1).png">
+                    <p>4.9(450+ Reviews)</p>
+                </div>
+            </div>
+        </div>
+        <div class="riv-r">
+            <div class="riv-pro">
+                <img src="images/—Pngtree—dumbbell and hand fitness symbol_6845036.png">
+                <div class="riv-name">
+                    <h3>Karan Mehra</h3>
+                    <p>Happy Customer</p>
+                </div>
+            </div>
+            <div class="rating-star">
+                <img src="images/rating+(1).png">
+            </div>
+            <div class="riv-com">
+                <p>"I' ve been coming to this gym for 2 years now and I've never been in better shape. The trainers are amazing and they always push me to my best. I'm so glad in this gym."</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+</section>
+
+
+<!-- footer section -->
+
+<section class="footer">
+
+    <div class="footer-sec">
+
+<div class="foot-col-one">
+    <div class="foot-one">
+        <h1>Company</h1>
+        <a href="#">About Us</a>
+        <a href="#">Why Us</a>
+        <a href="#">Security</a>
+        <a href="#">Partnership</a>
+    </div>
+
+    <div class="foot-one">
+        <h1>Categories</h1>
+        <a href="#">Basic Yoga</a>
+        <a href="#">Strength Tranning</a>
+        <a href="#">Body Building</a>
+        <a href="#">Weight Loss</a>
+    </div>
+
+
+    <div class="foot-one">
+        <h1>Help</h1>
+        <a href="#">Account</a>
+        <a href="#">Support Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+    </div>
+</div>
+
+<div class="foot-col-two">
+    <h1>Contact Us</h1>
+    <div class="contact-in">
+        <img src="#">
+        <p>000000000</p>
+    </div>
+
+    <div class="contact-in">
+        <img src="#">
+        <a href="#">@gmail.com</a>
+    </div>
+
+    <div class="contact-in">
+        <img src="#">
+        <p>dwarahat</p>
+    </div>
+</div>
+<div class="foot-col-three">
+    <h1>Subscribe Our Newsletter</h1>
+    <div class="news-srh">
+        <input type="text" placeholder="E-mail" required>
+        <img src="#">
+    </div>
+    <p>Never miss an update & news to your email.</p>
+</div>
+
+
+        
+    </div>
+    <div class="line-div">
+    <div class="line"></div>
+    </div>
+
+    <div class="foot-logo">
+        <img src="images/—Pngtree—dumbbell and hand fitness symbol_6845036.png">
+        <p>&copy; 2025 FitHub. All rights reserved.</p>
+        <div class="foot-social">
+            <a href="#"><img src="images/icons8-x-50.png"></a>
+              <a href="#"><img src="images/facebook.png"></a>
+                <a href="#"><img src="images/icons8-youtube-50.png"></a>
+                  <a href="#"><img src="images/icons8-instagram-50.png"></a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<script src="login.js"></script>
+<script src="subscription.js"></script>
+</body>
+</html>
