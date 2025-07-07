@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/—Pngtree—dumbbell and hand fitness symbol_6845036.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>FitHub</title>
 </head>
 <body>
@@ -12,23 +15,26 @@
         <div class="logo">
             <img src="images/—Pngtree—dumbbell and hand fitness symbol_6845036.png">
             <h2>FitHub</h2>
+               <div class="hamburger" onclick="togglemenu()"><img src="images/menu_27dp_8B1A10_FILL0_wght400_GRAD0_opsz24.png"></div>
         </div>
-        <div class="menu">
+      
+        <div class="menu" id="navlink">
             <div class="home">
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
             </div>
             <div class="About">
-                <a href="#">About Us</a>
+                <a href="#aboutus">About Us</a>
             </div>
             <div class="Program">
-                <a href="#">Program</a>
+                <a href="#programsec">Program</a>
             </div>
             <div class="Membership">
-                <a href="#">Membership</a>
+                <a href="#membership">Membership</a>
             </div>
             <div class="sign">
                 <button onclick="openModal()">Sign up</button>
                 </div>
+              
         </div>
      </header>
 
@@ -60,7 +66,7 @@
 
 
 <!-- first section -->
-     <section class="main">
+     <section class="main" id="home">
 <div class="sec">
         <div class="sec-one">
             <div class="left-sec-one">
@@ -104,7 +110,7 @@
 
 
 
-<section class="Second-sec-page">
+<section class="Second-sec-page" id="aboutus">
     <div class="sec-two">
         <div class="sec-upper">
             <div class="sec-upper-l">
@@ -145,7 +151,7 @@
  <!-- third section -->
 
 
-        <section class="third">
+        <section class="third" id="programsec">
 
             <div class="third-sec">
                 <div class="t-up">
@@ -205,7 +211,7 @@
 
 
 
-        <section class="fourth">
+        <section class="fourth" id="whyus">
 
 
             <div class="f-sec">
@@ -254,7 +260,7 @@
 
 <!-- fifth section -->
 
-<section class="fifth">
+<section class="fifth" id="membership">
 
 <div class="fifth-sec">
     
@@ -274,22 +280,22 @@
         <div class="pack-name">DISCOVER</div>
         <div class="prize"><span class="pri">$99</span>/Per Month</div>
         <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>5 classes per month</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>4 group classes monthly</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>Online class access</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>E-book fitness guide</p>
         </div>
 
@@ -301,27 +307,27 @@
         <div class="pack-name">ENTERPRISE</div>
         <div class="prize"><span class="pri">$299</span>/Per Month</div>
         <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>10 classes per month</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>6 group classes monthly</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>Online class access</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>E-book fitness guide</p>
         </div>
 
                  <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>7 Days fitness tranning</p>
         </div>
 
@@ -336,22 +342,22 @@
         <div class="pack-name">PROFESSIONAL</div>
         <div class="prize"><span class="pri">$199</span>/Per Month</div>
         <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>7 classes per month</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>6 group classes monthly</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>Online class access</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>E-book fitness guide</p>
         </div>
 
@@ -369,22 +375,22 @@
         <div class="pack-name">DISCOVER</div>
         <div class="prize"><span class="pri">$1099</span>/Per Year</div>
         <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>5 classes per month</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>4 group classes monthly</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>Online class access</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>E-book fitness guide</p>
         </div>
 
@@ -396,27 +402,27 @@
         <div class="pack-name">ENTERPRISE</div>
         <div class="prize"><span class="pri">$3499</span>/Per Year</div>
         <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>10 classes per month</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>6 group classes monthly</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>Online class access</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>E-book fitness guide</p>
         </div>
 
                  <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>7 Days fitness tranning</p>
         </div>
 
@@ -431,22 +437,22 @@
         <div class="pack-name">PROFESSIONAL</div>
         <div class="prize"><span class="pri">$2299</span>/Per Year</div>
         <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>7 classes per month</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>6 group classes monthly</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>Online class access</p>
         </div>
 
          <div class="pack-list">
-            <div class="list-img"><img src="#"></div>
+            <div class="list-img"><img src="images/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.png"></div>
             <p>E-book fitness guide</p>
         </div>
 
@@ -529,10 +535,10 @@
 <div class="foot-col-one">
     <div class="foot-one">
         <h1>Company</h1>
-        <a href="#">About Us</a>
-        <a href="#">Why Us</a>
+        <a href="#aboutus">About Us</a>
+        <a href="#whyus">Why Us</a>
         <a href="#">Security</a>
-        <a href="#">Partnership</a>
+        <a href="#aboutus">Partnership</a>
     </div>
 
     <div class="foot-one">
@@ -556,17 +562,17 @@
 <div class="foot-col-two">
     <h1>Contact Us</h1>
     <div class="contact-in">
-        <img src="#">
+        <img src="images/call_24dp_8B1A10_FILL0_wght400_GRAD0_opsz24.png">
         <p>000000000</p>
     </div>
 
     <div class="contact-in">
-        <img src="#">
+        <img src="images/mail_24dp_8B1A10_FILL0_wght400_GRAD0_opsz24.png">
         <a href="#">@gmail.com</a>
     </div>
 
     <div class="contact-in">
-        <img src="#">
+        <img src="images/distance_24dp_8B1A10_FILL0_wght400_GRAD0_opsz24.png">
         <p>dwarahat</p>
     </div>
 </div>
@@ -574,7 +580,7 @@
     <h1>Subscribe Our Newsletter</h1>
     <div class="news-srh">
         <input type="text" placeholder="E-mail" required>
-        <img src="#">
+        <img src="images/search_24dp_8B1A10_FILL0_wght400_GRAD0_opsz24.png">
     </div>
     <p>Never miss an update & news to your email.</p>
 </div>
@@ -601,7 +607,7 @@
 
 
 
-
+<script src="script.js"></script>
 <script src="login.js"></script>
 <script src="subscription.js"></script>
 </body>

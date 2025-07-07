@@ -1,10 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+     font-family: "Inter", sans-serif;
 }
 
 
+html{
+    scroll-behavior: smooth;
+}
 
 /* header */
 
@@ -86,7 +89,9 @@ header{
     cursor: pointer;
 }
 
-
+.hamburger{
+    display: none;
+}
 
 /* main */
 .main{
@@ -176,6 +181,7 @@ width:30vw;
 .Second-sec-page{
     background-color: rgb(35, 34, 34);
     height: 90vh;
+   
 }
 
 .sec-upper{
@@ -728,17 +734,42 @@ align-items: center;
 header{
     display: grid;
 }
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
 .logo{
     margin: 0;
 }
+.hamburger img{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
 .menu{
-    margin: 0px;
+    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(28, 27, 27);
+    width: 40vw;
+    top: 60px;
+    right: 1px;
+    border-radius: 10px;
+    padding: 10px 0;
+    z-index: 999;
+    transform: translate(120%);
+    transition: transform 0.3s ease-in-out;
+}
+.menu.show{
+   transform: translate(10%);
 }
 .menu a{
     font-size: 14px;
 }
 .sign button{
-    width: 12vw;
+    width: 18vw;
 }
 .sec{
     justify-content: start;
