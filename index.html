@@ -14,8 +14,10 @@
     <!-- loading screen -->
     <div id="loading-screen">
         <div class="loader-box">
+            <img src="images/—Pngtree—dumbbell and hand fitness symbol_6845036.png" class="loader-img">
+            <h1>FitHub</h1>
             <div class="loader-text">Loading...</div>
-        <img src="images/—Pngtree—dumbbell and hand fitness symbol_6845036.png" class="loader-img">
+        
         <div class="progress-bar">
             <div class="progress-fill"></div>
         </div>
@@ -48,10 +50,15 @@
             <div class="Membership">
                 <a href="#membership">Membership</a>
             </div>
-            <div class="sign">
-                <button onclick="openModal()">Sign up</button>
+            <div class="sign" id="signup">
+                <button id="signupbtn" onclick="openModal()">Sign up</button>
                 </div>
-                
+                <!-- profile -->
+
+  <div class="profile hidden" id="profile">
+    <img src="images/2.png" alt="profile" onclick="dashborad()">
+  </div>
+
               
         </div>
      </header>
@@ -72,6 +79,7 @@
       </div>
 
       <div class="form-container hidden" id="registerTab">
+        <input type="text" id="regname" placeholder="Name" />
         <input type="text" id="regUsername" placeholder="Username" />
         <input type="email" id="regEmail" placeholder="Email" />
         <input type="password" id="regPassword" placeholder="Password" />
@@ -81,6 +89,7 @@
     <span class="close" onclick="closeModal()">&times;</span>
   </div>
 
+  
 
 
 <!-- first section -->

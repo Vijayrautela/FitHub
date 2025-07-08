@@ -25,6 +25,7 @@
     }
 
     function saveUser() {
+      const name = document.getElementById("regname") .value;
       const username = document.getElementById("regUsername").value;
       const email = document.getElementById("regEmail").value;
       const password = document.getElementById("regPassword").value;
@@ -34,7 +35,7 @@
         return;
       }
 
-      const user = { username, email, password };
+      const user = {name, username, email, password };
       localStorage.setItem("userData", JSON.stringify(user));
       alert("Registered successfully!");
       showTab("login");
@@ -53,8 +54,12 @@
       ) {
         alert("Login successful!");
         closeModal();
+        document.getElementById("signup").classList.add("hidden");
+        document.getElementById("profile").classList.remove("hidden");
+        document.getElementById("profile").title=input;
+
       } else {
-        alert("Invalid credentials.");
+        alert("Invalid Login.");
       }
     }
 
@@ -63,3 +68,7 @@
       const modal = document.getElementById("authModal");
       if (e.target === modal) closeModal();
     };
+
+
+    // profile picture
+  

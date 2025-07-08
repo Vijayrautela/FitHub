@@ -10,6 +10,6 @@ window.addEventListener("load",function(){
    const main = document.getElementById("main-contant");
    loader.classList.add("hidden");
    main.style.opacity="1";
-    },2000);
+    },2500);
   
 });

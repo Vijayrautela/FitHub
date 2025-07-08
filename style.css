@@ -22,7 +22,7 @@ html{
     transition: opacity 1s ease, visibility 1s ease;
 }
 .loder-text{
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
     color: #555;
     animation: blink 1s linear infinite;
@@ -37,8 +37,8 @@ html{
     pointer-events: none;
 }
 .loader-img{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 .loader-box{
     text-align: center;
@@ -53,7 +53,7 @@ html{
     height: 100%;
     width: 0;
     background: #8b1a10;
-    animation: fillprogress 3s linear forwards;
+    animation: fillprogress 3s ease-in-out forwards;
     border-radius: 10px;
 }
 @keyframes fillprogress{
@@ -800,6 +800,11 @@ header{
     right: 20px;
     top: 15px;
 }
+
+#profile img{
+    width: 14vw;
+    height: 6vh;
+}
 .menu{
     
     display: flex;
@@ -1246,6 +1251,7 @@ header{
 
     .form-container {
       padding: 20px;
+      background-color: rgba(255, 255, 255, 0.556);
     }
 
     .form-container input {
@@ -1254,7 +1260,7 @@ header{
       margin: 8px 0;
       border-radius: 5px;
       border: 1px solid #ccc;
-      background-color: rgba(254, 254, 253, 0.596);
+      background-color: rgba(255, 255, 255, 0.834);
       color: black;
     }
     
@@ -1274,3 +1280,12 @@ header{
     }
 
     .hidden { display: none; }
+
+    /* profile */
+
+    .profile img{
+        height: 7vh;
+        width: 4vw;
+        border-radius: 50%;
+        cursor: pointer;
+    }
