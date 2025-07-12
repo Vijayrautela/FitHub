@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
      font-family: "Inter", sans-serif;
+     scrollbar-width: none;
 }
 
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
 }
+
 
 /* loading screen */
 #loading-screen{
@@ -145,6 +148,9 @@ header{
 .hamburger{
     display: none;
 }
+ .closenav {
+    display: none;
+    }
 
 /* main */
 .main{
@@ -157,6 +163,7 @@ header{
 
 
 
+
 .sec{
     position: relative;
     top: 155px;
@@ -165,6 +172,21 @@ header{
 }
 .sec-one{
 width:30vw;
+}
+
+.last-one{
+    animation: numb 1s ease;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+@keyframes numb{
+    0%{
+        transform: scale(0.5) translateY(20px);
+    }
+    100%{
+        transform: scale(1) translateY(0);
+    }
 }
 
 
@@ -535,7 +557,9 @@ width:30vw;
     gap: 10px;
     background-color: rgb(39, 38, 38);
     margin: 20px 0 20px 0;
+    animation: numb 1.5s linear;
 }
+
 .pack-name{
     display: flex;
     justify-content: center;
@@ -791,6 +815,14 @@ header{
     display: block;
     cursor: pointer;
 }
+.closenav {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 22px;
+      color: #555;
+      cursor: pointer;
+    }
 .logo{
     margin: 0;
 }
@@ -816,7 +848,7 @@ header{
     right: 1px;
     border-radius: 10px;
     padding: 10px 0;
-    z-index: 999;
+    /* z-index: 1; */
     transform: translate(120%);
     transition: transform 0.3s ease-in-out;
 }
@@ -973,7 +1005,7 @@ header{
 
 /* fifth ssection */
 .fifth{
-    height: 80vh;
+    height: 90vh;
 }
 .fifth-up p{
     justify-content: center;
@@ -992,6 +1024,7 @@ header{
     justify-content: flex-start;
     scrollbar-width: none;
     padding: 5px;
+    margin-top: 20px;
     
 }
 
@@ -1204,6 +1237,7 @@ header{
       cursor: pointer;
       font-size: 16px;
       transition: 0.3s;
+      margin: 30px 0 0 0;
     }
 
 
@@ -1212,10 +1246,10 @@ header{
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(145, 142, 142, 0.588);
       justify-content: center;
       align-items: center;
-      z-index: 98;
+      z-index: 99;
     }
 
     .modal-content {
@@ -1251,18 +1285,24 @@ header{
 
     .form-container {
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.556);
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .form-container input {
       width: 90%;
       padding: 10px;
       margin: 8px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      background-color: rgba(255, 255, 255, 0.834);
+      border-radius: 2px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0);
       color: black;
+      border-bottom: 1px solid red;
     }
+   
     
 
     .close {
@@ -1280,6 +1320,45 @@ header{
     }
 
     .hidden { display: none; }
+
+    .remember{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 0 0;
+    }
+    .re-m{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rem-p{
+        font-size: 14px;
+    }
+   .forgot{
+    margin-left: 78px;
+   }
+
+    .forgot button{
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+    .signup-m{
+        margin: 9px 0 0 0;
+    }
+    .signup-m button{
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+    
+
+
+
+
+
+
 
     /* profile */
 

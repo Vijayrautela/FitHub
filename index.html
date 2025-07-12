@@ -69,19 +69,39 @@
     <div class="modal-content">
       <div class="tab-header">
         <button class="tab-btn active" onclick="showTab('login')">Login</button>
-        <button class="tab-btn" onclick="showTab('register')">Register</button>
+        <button class="tab-btn" onclick="showTab('register')">Sign up</button>
       </div>
 
       <div class="form-container" id="loginTab">
+        <div class="log-pro">
+            <img src="images/3.png">
+        </div>
         <input type="text" id="loginUser" placeholder="Email or Username" />
         <input type="password" id="loginPass" placeholder="Password" />
+        <div class="remember">
+            
+                <div class="check"><input type="checkbox" id="rememberme"/></div>
+                <div class="rem-p"><p>Remember me</p></div>
+            
+            <div class="forgot">
+                <button>Forgot Password?</button>
+            </div>
+           
+        </div>
         <button class="btn" onclick="loginUser()">Login</button>
+        <div class="signup-m">
+            <p>Don't have an Account? <button onclick="showTab('register')">Sign up</button></p>
+        </div>
       </div>
 
       <div class="form-container hidden" id="registerTab">
+         <div class="log-pro">
+            <img src="images/1.png">
+        </div>
         <input type="text" id="regname" placeholder="Name" />
         <input type="text" id="regUsername" placeholder="Username" />
-        <input type="email" id="regEmail" placeholder="Email" />
+        <input type="number" id="regno" placeholder="Mobile no" />
+        <input type="email" id="regEmail" placeholder="Email@gmail.com" />
         <input type="password" id="regPassword" placeholder="Password" />
         <button class="btn" onclick="saveUser()">Register</button>
       </div>
@@ -641,8 +661,8 @@
 
 <!-- script section and web page end div  -->
 </div>
-<script src="script.js"></script>
-<script src="login.js"></script>
-<script src="subscription.js"></script>
+<script src="js/script.js"></script>
+<script src="js/login.js"></script>
+<script src="js/subscription.js"></script>
 </body>
 </html>

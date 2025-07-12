@@ -27,6 +27,7 @@
     function saveUser() {
       const name = document.getElementById("regname") .value;
       const username = document.getElementById("regUsername").value;
+      const number = document.getElementById("regno").value;
       const email = document.getElementById("regEmail").value;
       const password = document.getElementById("regPassword").value;
 
@@ -35,7 +36,7 @@
         return;
       }
 
-      const user = {name, username, email, password };
+      const user = {name, username, number, email, password };
       localStorage.setItem("userData", JSON.stringify(user));
       alert("Registered successfully!");
       showTab("login");
@@ -49,7 +50,7 @@
 
       if (
         user &&
-        (user.username === input || user.email === input) &&
+        (user.username === input || user.email === input || user.number === input) &&
         user.password === pass
       ) {
         alert("Login successful!");
@@ -71,4 +72,3 @@
 
 
     // profile picture
-  
