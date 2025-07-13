@@ -557,7 +557,16 @@ width:30vw;
     gap: 10px;
     background-color: rgb(39, 38, 38);
     margin: 20px 0 20px 0;
-    animation: numb 1.5s linear;
+    animation: rotate 1.2s ease-in;
+}
+@keyframes rotate{
+
+    from{
+        transform: rotateY(0);
+    }
+    to{
+        transform: rotateY(180deg);
+    }
 }
 
 .pack-name{
@@ -999,10 +1008,10 @@ header{
 
 
 .f-r img{
-    width: 30vw;
+    width: 40vw;
 }
 .f-r .circul-f{
-    width: 30vw;
+    width: 40vw;
 }
 
 /* fifth ssection */
@@ -1081,10 +1090,34 @@ header{
 }
 .riv-star{
     justify-content: space-around;
-    gap: 40px;
+    gap: 110px;
 }
 .riv-r{
     width: 85vw;
+}
+.riv-pic-o img{
+    position: absolute;
+    height: 4vh;
+    width: 4vh;
+    z-index: 1;
+}
+.riv-pic-t img{
+    position: absolute;
+     height: 4vh;
+    width: 4vh;
+    z-index: 2;
+}
+.riv-pic-q img{
+    position: absolute;
+     height: 4vh;
+    width: 4vh;
+    z-index: 3;
+}
+.riv-pic-w img{
+    position: absolute;
+     height: 4vh;
+    width: 4vh;
+    z-index: 4;
 }
 
 
@@ -1310,6 +1343,7 @@ header{
       background-color: rgba(255, 255, 255, 0);
       color: black;
       border-bottom: 1px solid red;
+      outline: none;
     }
    
     
@@ -1361,9 +1395,13 @@ header{
         background-color: white;
         cursor: pointer;
     }
-    
-
-
+  
+.log-pro img{
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 8vh;
+    width: 5vw;
+}
 
 
 
